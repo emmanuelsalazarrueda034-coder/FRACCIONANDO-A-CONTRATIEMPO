@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraccionando a Contratiempo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>
+    <div class="menu">
+        <button onclick="mostrarInicio()">🏠 Inicio</button>
+        <button onclick="mostrarJuego()">🎮 Juego</button>
+        <button onclick="mostrarEstadisticas()">📊 Estadísticas</button>
+    </div>
+<br>
+
+<button onclick="iniciarMusica()">
+🎵 Reproducir Mambo del Politécnico
+</button>
+    <div id="inicio">
+
+    <h2>INSTITUTO POLITÉCNICO NACIONAL</h2>
+
+    <h3>CECyT 19 "LEONA VICARIO"</h3>
+
+    <h1>FRACCIONANDO A CONTRATIEMPO</h1>
+
+    <h3>
+        PROYECTO AULA
+    </h3>
+
+    <h2>
+        "ALGEBREANDO MI MUNDO"
+    </h2>
+
+    <p>
+        Sistema Interactivo para el Aprendizaje y Resolución
+        de Operaciones con Fracciones.
+    </p>
+<h3>INTEGRANTES</h3>
+
+<ul style="list-style-position: inside; font-size: 20px;">
+
+    <li>Prado Santos Carlos Yahir</li>
+
+    <li>Mercado Chávez Evan Yair</li>
+
+    <li>Rodrígues Estrada Ali Ramses</li>
+
+    <li>Morales Enríquez Yoshua</li>
+
+    <li>Salazar Rueda Emmanuel</li>
+
+    <li>Ortiz Estrada Ángel Yair</li>
+
+</ul>
+    <p>
+        Pon a prueba tus conocimientos resolviendo
+        ejercicios de fracciones contra reloj.
+    </p>
+
+</div>
+    <div id="juego" style="display:none;">
+
+        <h2 id="ejercicio"></h2>
+
+        <h3>
+            ⏰ Tiempo: <span id="tiempo">40</span>
+        </h3>
+
+        <input
+            type="text"
+            id="respuesta"
+            placeholder="Escribe tu respuesta">
+
+        <br><br>
+
+        <button onclick="verificar()">
+            Verificars
+        </button>
+
+        <p id="resultado"></p>
+        <div id="explicacion"></div>
+<div id="explicacion"></div>
+    </div>
+
+    <div id="estadisticas" style="display:none;">
+
+        <h2>📊 Estadísticas</h2>
+
+        <p id="puntaje">
+            Puntos: 0
+        </p>
+
+    </div>
+
+    <footer>
+        PROYECTO AULA 2026
+        SALÓN: 1IV10
+        MATERIA: COMPUTACIÓN
+        CECyT 19 "LEONA VICARIO"
+    </footer>
+<audio id="musica" loop>
+    <source src="Mambo Del Politecnico.mp3" type="audio/mpeg">
+</audio>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
